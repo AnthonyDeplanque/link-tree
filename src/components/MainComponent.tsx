@@ -1,17 +1,18 @@
 import React from 'react';
 import { useTheme } from '../context/theme/ThemeContextProvider';
 
+import Header from './header/Header';
+
 const MainComponent: React.FC = () => {
-  const { isDarkTheme, toggleTheme } = useTheme();
+  const { isDarkTheme } = useTheme()
 
   return (
-    <div>
-      <button onClick={toggleTheme}>
-        {isDarkTheme ? 'Passer au thème clair' : 'Passer au thème foncé'}
-      </button>
-      <p>{isDarkTheme ? 'Thème foncé activé' : 'Thème clair activé'}</p>
-    </div>
-  );
+    <div className={`${isDarkTheme ? "light" : "dark"} main-container`} >
+      <Header />
+
+    </div >);
+
+
 };
 
 export default MainComponent;
