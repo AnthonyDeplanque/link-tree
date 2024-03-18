@@ -1,14 +1,25 @@
 import { LinkModel } from "../../config/link-model";
-
+import "../../assets/link-card.css"
 export interface LinkCardProps {
-  link: LinkModel
+  link: LinkModel,
+  icon?: JSX.Element
 }
 const LinkCard = (props: LinkCardProps) => {
-  const { link } = props;
+  const { link, icon } = props;
 
-  return <a className="link-card" href={link.address}>
-    <div><img src={link.icon} /><span>{link.name}</span></div>
-  </a>
+  return (
+    <a className="link-card" href={link.address}>
+      <div className="link-card-icon">
+        {
+          icon ?
+            icon :
+            ''
+        }
+      </div>
+      <div className="link-card-name">
+        <span>{link.name}</span>
+      </div>
+    </a>)
 
 }
 
