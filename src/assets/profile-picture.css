@@ -1,3 +1,11 @@
+.profile-picture-component {
+  margin: 1rem;
+}
+
+.profile-picture-component>h1 {
+  padding-left: 2rem;
+}
+
 .profile-picture {
   width: 10%;
 }

@@ -8,7 +8,7 @@ const LinkCard = (props: LinkCardProps) => {
   const { link, icon } = props;
 
   return (
-    <a className="link-card" href={link.address}>
+    <a className="link-card" href={link.address} target="_blank">
       <div className="link-card-icon">
         {
           icon ?
