@@ -1,4 +1,4 @@
-import { Instagram, Music2 as Tiktok, Twitch, Twitter, Youtube } from "lucide-react";
+import { Instagram, Music2 as Tiktok, Twitch, Twitter, Youtube, HandCoins as Dons, BotMessageSquare as Discord } from "lucide-react";
 import { useEffect, useState } from "react";
 import { LinkModel } from "../config/link-model";
 import LinkCard from "./card/LinkCard";
@@ -20,6 +20,8 @@ const LinkList = () => {
     ["twitch", <Twitch />],
     ["twitter", <Twitter />],
     ["youtube", <Youtube />],
+    ["dons", <Dons />],
+    ['discord', <Discord />]
   ])
 
   return <>
