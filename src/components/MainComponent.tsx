@@ -6,7 +6,7 @@ import LinkList from './LinkList';
 
 const MainComponent: React.FC = () => {
   return (
-    <div className={`main-container`} >
+    <div className="main-container" >
       <LinkList />
     </div >
   );
