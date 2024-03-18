@@ -1,0 +1,22 @@
+.link-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  height: 4rem;
+  border: 3px solid;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  margin: 1rem;
+}
+
+.link-card:hover {
+  background-color: rgba(0, 200, 100, .5);
+}
+
+.link-card-icon {
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+
+.link-card-name {}
