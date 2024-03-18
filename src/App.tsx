@@ -1,12 +1,19 @@
 import "./assets/App.css"
 import MainComponent from './components/MainComponent'
-import { ThemeProvider } from './context/theme/ThemeContextProvider'
+import Header from "./components/header/Header"
+import { useTheme } from "./context/theme/useTheme"
 function App() {
+
+  const { isDarkTheme } = useTheme()
+
   return (
     <>
-      <ThemeProvider>
+      <div className={isDarkTheme ? "dark" : "light"}>
+
+        <Header />
         <MainComponent />
-      </ThemeProvider>
+
+      </div>
     </>
   )
 }

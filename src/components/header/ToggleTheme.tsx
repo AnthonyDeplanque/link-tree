@@ -1,7 +1,8 @@
 
-import { useTheme } from "../../context/theme/ThemeContextProvider"
+
 import '../../assets/toggle-theme.css'
 import { Moon, Sun } from "lucide-react"
+import { useTheme } from '../../context/theme/useTheme'
 
 const ToggleTheme = () => {
   const { isDarkTheme, toggleTheme } = useTheme()

@@ -3,7 +3,7 @@ import ToggleTheme from "./ToggleTheme";
 
 const Header = () => {
 
-  return <div>
+  return <div className="header-component">
     <ProfilePicture />
     <ToggleTheme />
   </div>
