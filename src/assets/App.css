@@ -6,6 +6,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
