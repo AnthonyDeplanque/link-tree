@@ -1,7 +1,15 @@
-import { Instagram, Music2 as Tiktok, Twitch, Twitter, Youtube, HandCoins as Dons, BotMessageSquare as Discord, Gamepad2 as InstantGaming } from "lucide-react";
 import { useEffect, useState } from "react";
 import { LinkModel } from "../config/link-model";
 import LinkCard from "./card/LinkCard";
+import DiscordIcon from "./icons/DiscordIcon";
+import DonationIcon from "./icons/DonationIcon";
+import GamepadIcon from "./icons/GamepadIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import ThreadsIcon from "./icons/ThreadsIcon";
+import TiktokIcon from "./icons/TiktokIcon";
+import TwitchIcon from "./icons/TwitchIcon";
+import TwitterIcon from "./icons/TwitterIcon";
+import YoutubeIcon from "./icons/YoutubeIcon";
 
 const LinkList = () => {
 
@@ -15,14 +23,15 @@ const LinkList = () => {
   }, [])
 
   const lucideSocialIcons = new Map<string, JSX.Element>([
-    ["instagram", <Instagram />],
-    ["tiktok", <Tiktok />],
-    ["twitch", <Twitch />],
-    ["twitter", <Twitter />],
-    ["youtube", <Youtube />],
-    ["dons", <Dons />],
-    ['discord', <Discord />],
-    ['instant gaming', <InstantGaming />]
+    ["instagram", <InstagramIcon />],
+    ["threads", <ThreadsIcon />],
+    ["tiktok", <TiktokIcon />],
+    ["twitch", <TwitchIcon />],
+    ["twitter", <TwitterIcon />],
+    ["youtube", <YoutubeIcon />],
+    ["dons", <DonationIcon />],
+    ['discord', <DiscordIcon />],
+    ['instant gaming', <GamepadIcon />]
   ])
 
   return <div className="link-list">
