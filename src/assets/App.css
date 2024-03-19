@@ -38,6 +38,10 @@ body {
   padding: 0;
 }
 
+.main-card {
+  padding: 1rem;
+}
+
 .header-component {
   width: 100%;
   display: flex;
@@ -66,18 +70,36 @@ body {
   transition: background-color 0.5s ease;
 }
 
-.footer-left {}
+.footer-component>.left {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 
-.footer-middle {
+.footer-component>.middle {
   height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: baseline;
-  align-content: center;
+  align-content: space-around;
+  justify-content: center;
 }
 
-.footer-right {}
+
+.footer-component>.right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .profile-picture-component {

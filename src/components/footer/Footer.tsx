@@ -3,12 +3,12 @@ import NotebookIcon from "../icons/NotebookIcon";
 
 const Footer = () => {
   return <div className="footer-component">
-    <div className="footer-left">
+    <div className="left">
     </div>
-    <div className="footer-middle">
+    <div className="middle">
       <p>Made with love and a lot of coffee</p>
     </div>
-    <div className="footer-right">
+    <div className="right">
       <Link to="/legal">
         <NotebookIcon />
       </Link>

@@ -4,10 +4,14 @@ import BackIcon from "./icons/BackIcon";
 const Legal = () => {
   return (
     <>
-      <p>Coming soon !</p>
-      <Link to="/">
-        <BackIcon />
-      </Link>
+      <div style={{ padding: "1rem" }}>
+        <p>Coming soon !</p>
+      </div>
+      <div style={{ padding: "1rem" }}>
+        <Link to="/">
+          <BackIcon />
+        </Link>
+      </div>
     </>
   )
 }
