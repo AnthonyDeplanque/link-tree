@@ -1,5 +1,6 @@
 .profile-picture-component {
   margin: 1rem;
+  width: 75%;
 }
 
 .profile-picture-component>h1 {
@@ -7,5 +8,5 @@
 }
 
 .profile-picture {
-  width: 5%;
+  width: 75px;
 }
