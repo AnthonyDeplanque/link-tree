@@ -22,7 +22,7 @@ const LinkList = () => {
       .catch((error) => console.log(error))
   }, [])
 
-  const lucideSocialIcons = new Map<string, JSX.Element>([
+  const socialIcons = new Map<string, JSX.Element>([
     ["instagram", <InstagramIcon />],
     ["threads", <ThreadsIcon />],
     ["tiktok", <TiktokIcon />],
@@ -37,7 +37,7 @@ const LinkList = () => {
   return <div className="link-list">
     {
       links && links.map((link: LinkModel, key: number) =>
-        <LinkCard key={key} link={link} icon={lucideSocialIcons.get(link.name)} />)
+        <LinkCard key={key} link={link} icon={socialIcons.get(link.name)} />)
 
     }
   </div>

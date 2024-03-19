@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom"
 import "./assets/App.css"
 import MainComponent from './components/MainComponent'
 import Footer from "./components/footer/Footer"
@@ -7,14 +8,16 @@ function App() {
 
   const { isDarkTheme } = useTheme()
 
-
+  console.log("Eh mais t'es pas sensé regarder la console !")
+  console.log("Allez, zou ! Dehors !!!")
   return (
     <>
       <div className={isDarkTheme ? "dark" : "light"}>
-
-        <Header />
-        <MainComponent />
-        <Footer />
+        <BrowserRouter>
+          <Header />
+          <MainComponent />
+          <Footer />
+        </BrowserRouter>
       </div>
     </>
   )

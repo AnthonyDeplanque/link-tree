@@ -2,9 +2,10 @@
   "semi": false,
   "singleQuote": true,
   "tabWidth": 2,
-  "printWidth": 80,
+  "printWidth": 120,
   "jsxSingleQuote": true,
   "jsxBracketSameLine": false,
   "arrowParens": "always",
   "endOfLine": "auto"
+
 }
