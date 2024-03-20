@@ -9,11 +9,10 @@
   border-radius: 1rem;
   padding: 0 1rem;
   margin: 1rem 0;
-  transition: .1s ease-in-out;
+  transition: 0.1s ease-in-out;
   position: relative;
   background-image: linear-gradient(90deg, rgba(18, 56, 6, 0) 0%, rgba(47, 121, 9, 0) 31%, rgba(99, 154, 96, 0) 100%);
   overflow: hidden;
-
 }
 
 .link-card::after {
@@ -42,7 +41,6 @@
   /* Fait apparaître progressivement le dégradé au survol */
 }
 
-
 .link-card-icon {
   padding-left: 1rem;
   padding-right: 2rem;
@@ -52,23 +50,18 @@
 }
 
 .link-card:hover .link-card-icon {
-
   transform: scale(1.5);
   /* Ajoute une ombre portée */
   /* Agrandir l'icône au survol */
-
 }
 
 .light .link-card:hover .link-card-icon {
-
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
 }
 
 .dark .link-card:hover .link-card-icon {
   filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
-
 }
-
 
 .link-card-name {
   transition: transform 0.1s ease-in-out;

@@ -3,8 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
-
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -20,7 +19,6 @@ a {
 body {
   overflow-x: hidden;
 }
-
 
 .main-container {
   padding: 100px 0 150px 0;
@@ -70,7 +68,7 @@ body {
   transition: background-color 0.5s ease;
 }
 
-.footer-component>.left {
+.footer-component > .left {
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -80,7 +78,7 @@ body {
   align-items: center;
 }
 
-.footer-component>.middle {
+.footer-component > .middle {
   height: 100%;
   width: 50%;
   display: flex;
@@ -90,8 +88,7 @@ body {
   justify-content: center;
 }
 
-
-.footer-component>.right {
+.footer-component > .right {
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -100,7 +97,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 .profile-picture-component {
   display: flex;
@@ -133,8 +129,6 @@ body {
   box-shadow: 0 -1px 3px #111111;
 }
 
-
-
 .dark {
   background-color: #111111;
   color: #dddddd;
@@ -159,7 +153,6 @@ body {
   box-shadow: 0 -1px 3px #dddddd;
 }
 
-
 @media screen and (min-width: 500px) {
   .header-component {
     justify-content: center;
@@ -172,7 +165,6 @@ body {
   .link-list {
     width: 50%;
   }
-
 }
 
 @media screen and (max-width: 500px) {

@@ -1,4 +1,4 @@
 export interface LinkModel {
-  name: string;
-  address: string;
+  name: string
+  address: string
 }

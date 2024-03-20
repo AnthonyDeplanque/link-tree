@@ -3,10 +3,11 @@ import ToggleTheme from "./ToggleTheme";
 
 const Header = () => {
 
-  return <div className="header-component">
+  return (
+  <div className="header-component">
     <ProfilePicture />
     <ToggleTheme />
-  </div>
+  </div>)
 }
 
 export default Header;
