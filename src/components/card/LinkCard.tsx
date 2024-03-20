@@ -1,11 +1,11 @@
-import '../../assets/link-card.css'
-import { LinkModel } from '../../config/link-model'
+import '../../assets/link-card.css';
+import { LinkModel } from '../../config/link-model';
 export interface LinkCardProps {
-  link: LinkModel
-  icon?: JSX.Element
+  link: LinkModel;
+  icon?: JSX.Element;
 }
-const LinkCard = (props: LinkCardProps) => {
-  const { link, icon } = props
+const LinkCard: React.FC<LinkCardProps> = (props: LinkCardProps): JSX.Element => {
+  const { link, icon } = props;
 
   return (
     <a className='link-card' href={link.address} target='_blank'>
@@ -14,7 +14,7 @@ const LinkCard = (props: LinkCardProps) => {
         <span>{link.name}</span>
       </div>
     </a>
-  )
-}
+  );
+};
 
-export default LinkCard
+export default LinkCard;

@@ -1,4 +1,4 @@
-const SunIcon = () => (
+const SunIcon: React.FC = (): JSX.Element => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='24'
@@ -20,6 +20,6 @@ const SunIcon = () => (
     <path d='m6.34 17.66-1.41 1.41' />
     <path d='m19.07 4.93-1.41 1.41' />
   </svg>
-)
+);
 
-export default SunIcon
+export default SunIcon;

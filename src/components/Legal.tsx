@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import BackIcon from './icons/BackIcon'
+import { Link } from 'react-router-dom';
+import BackIcon from './icons/BackIcon';
 
-const Legal = () => {
+const Legal: React.FC = (): JSX.Element => {
   return (
     <>
       <div style={{ padding: '1rem' }}>
@@ -13,7 +13,7 @@ const Legal = () => {
         </Link>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Legal
+export default Legal;

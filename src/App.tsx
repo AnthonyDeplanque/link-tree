@@ -1,14 +1,15 @@
-import { BrowserRouter } from 'react-router-dom'
-import './assets/App.css'
-import MainComponent from './components/MainComponent'
-import Footer from './components/footer/Footer'
-import Header from './components/header/Header'
-import { useTheme } from './context/theme/useTheme'
-function App() {
-  const { isDarkTheme } = useTheme()
+import { BrowserRouter } from 'react-router-dom';
+import './assets/App.css';
+import MainComponent from './components/MainComponent';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import { useTheme } from './context/theme/useTheme';
 
-  console.log("Eh mais t'es pas sensé regarder la console !")
-  console.log('Allez, zou ! Dehors !!!')
+const App: React.FC = (): JSX.Element => {
+  const { isDarkTheme } = useTheme();
+
+  console.log("Eh mais t'es pas sensé regarder la console !");
+  console.log('Allez, zou ! Dehors !!!');
   return (
     <>
       <div className={isDarkTheme ? 'dark' : 'light'}>
@@ -19,6 +20,6 @@ function App() {
         </BrowserRouter>
       </div>
     </>
-  )
-}
-export default App
+  );
+};
+export default App;

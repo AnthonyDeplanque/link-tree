@@ -1,4 +1,4 @@
-const NotebookIcon = () => (
+const NotebookIcon: React.FC = (): JSX.Element => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='24'
@@ -19,6 +19,6 @@ const NotebookIcon = () => (
     <path d='M9.5 12H16' />
     <path d='M9.5 16H14' />
   </svg>
-)
+);
 
-export default NotebookIcon
+export default NotebookIcon;

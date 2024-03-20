@@ -1,10 +1,10 @@
-import '../../assets/toggle-theme.css'
-import { useTheme } from '../../context/theme/useTheme'
-import MoonIcon from '../icons/MoonIcon'
-import SunIcon from '../icons/SunIcon'
+import '../../assets/toggle-theme.css';
+import { useTheme } from '../../context/theme/useTheme';
+import MoonIcon from '../icons/MoonIcon';
+import SunIcon from '../icons/SunIcon';
 
-const ToggleTheme = () => {
-  const { isDarkTheme, toggleTheme } = useTheme()
+const ToggleTheme: React.FC = (): JSX.Element => {
+  const { isDarkTheme, toggleTheme } = useTheme();
 
   return (
     <div className='toggle-theme-component'>
@@ -14,7 +14,7 @@ const ToggleTheme = () => {
         <span className={`slider round ${isDarkTheme ? 'dark-toggle' : 'light-toggle'}`} />
       </label>
     </div>
-  )
-}
+  );
+};
 
-export default ToggleTheme
+export default ToggleTheme;

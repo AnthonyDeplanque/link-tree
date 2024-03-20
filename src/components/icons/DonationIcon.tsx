@@ -1,4 +1,4 @@
-const DonationIcon = () => (
+const DonationIcon: React.FC = (): JSX.Element => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='24'
@@ -15,6 +15,6 @@ const DonationIcon = () => (
     <path d='m2 15 6 6' />
     <path d='M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z' />
   </svg>
-)
+);
 
-export default DonationIcon
+export default DonationIcon;

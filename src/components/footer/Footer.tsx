@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import NotebookIcon from '../icons/NotebookIcon'
+import { Link } from 'react-router-dom';
+import NotebookIcon from '../icons/NotebookIcon';
 
-const Footer = () => {
+const Footer: React.FC = (): JSX.Element => {
   return (
     <div className='footer-component'>
       <div className='left'></div>
@@ -14,7 +14,7 @@ const Footer = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

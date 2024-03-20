@@ -1,13 +1,13 @@
-import ProfilePicture from "./ProfilePicture";
-import ToggleTheme from "./ToggleTheme";
+import ProfilePicture from './ProfilePicture';
+import ToggleTheme from './ToggleTheme';
 
-const Header = () => {
-
+const Header: React.FC = (): JSX.Element => {
   return (
-  <div className="header-component">
-    <ProfilePicture />
-    <ToggleTheme />
-  </div>)
-}
+    <div className='header-component'>
+      <ProfilePicture />
+      <ToggleTheme />
+    </div>
+  );
+};
 
 export default Header;
