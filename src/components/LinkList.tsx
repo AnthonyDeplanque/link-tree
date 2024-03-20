@@ -12,6 +12,8 @@ import TwitterIcon from './icons/TwitterIcon';
 import YoutubeIcon from './icons/YoutubeIcon';
 
 const LinkList: React.FC = (): JSX.Element => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
   const [links, setLinks] = useState<LinkModel[]>();
 
   useEffect(() => {
