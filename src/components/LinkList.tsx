@@ -10,6 +10,7 @@ import TiktokIcon from "./icons/TiktokIcon";
 import TwitchIcon from "./icons/TwitchIcon";
 import TwitterIcon from "./icons/TwitterIcon";
 import YoutubeIcon from "./icons/YoutubeIcon";
+import SpotifyIcon from "./icons/SpotifyIcon";
 
 const LinkList = () => {
 
@@ -23,22 +24,22 @@ const LinkList = () => {
   }, [])
 
   const socialIcons = new Map<string, JSX.Element>([
+    ['instant gaming', <GamepadIcon />],
     ["instagram", <InstagramIcon />],
+    ['discord', <DiscordIcon />],
     ["threads", <ThreadsIcon />],
     ["tiktok", <TiktokIcon />],
+    ['spotify', <SpotifyIcon />],
     ["twitch", <TwitchIcon />],
     ["twitter", <TwitterIcon />],
     ["youtube", <YoutubeIcon />],
     ["dons", <DonationIcon />],
-    ['discord', <DiscordIcon />],
-    ['instant gaming', <GamepadIcon />]
   ])
 
   return <div className="link-list">
     {
       links && links.map((link: LinkModel, key: number) =>
         <LinkCard key={key} link={link} icon={socialIcons.get(link.name)} />)
-
     }
   </div>
 }
