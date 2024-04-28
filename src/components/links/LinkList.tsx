@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import { LinkModel } from "../config/link-model";
-import LinkCard from "./card/LinkCard";
-import DiscordIcon from "./icons/DiscordIcon";
-import DonationIcon from "./icons/DonationIcon";
-import GamepadIcon from "./icons/GamepadIcon";
-import InstagramIcon from "./icons/InstagramIcon";
-import ThreadsIcon from "./icons/ThreadsIcon";
-import TiktokIcon from "./icons/TiktokIcon";
-import TwitchIcon from "./icons/TwitchIcon";
-import TwitterIcon from "./icons/TwitterIcon";
-import YoutubeIcon from "./icons/YoutubeIcon";
+import { LinkModel } from "../../config/link-model";
+import LinkCard from "./LinkCard";
+import DiscordIcon from "../icons/DiscordIcon";
+import DonationIcon from "../icons/DonationIcon";
+import GamepadIcon from "../icons/GamepadIcon";
+import InstagramIcon from "../icons/InstagramIcon";
+import ThreadsIcon from "../icons/ThreadsIcon";
+import TiktokIcon from "../icons/TiktokIcon";
+import TwitchIcon from "../icons/TwitchIcon";
+import TwitterIcon from "../icons/TwitterIcon";
+import YoutubeIcon from "../icons/YoutubeIcon";
 
 const LinkList = () => {
 
