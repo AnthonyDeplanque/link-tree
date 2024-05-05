@@ -11,6 +11,7 @@ import TwitchIcon from "./icons/TwitchIcon";
 import TwitterIcon from "./icons/TwitterIcon";
 import YoutubeIcon from "./icons/YoutubeIcon";
 import SpotifyIcon from "./icons/SpotifyIcon";
+import MerchIcon from "./icons/MerchIcon";
 
 const LinkList = () => {
 
@@ -34,6 +35,9 @@ const LinkList = () => {
     ["twitter", <TwitterIcon />],
     ["youtube", <YoutubeIcon />],
     ["dons", <DonationIcon />],
+    ["merch", <MerchIcon />],
+    ['discord', <DiscordIcon />],
+    ['instant gaming', <GamepadIcon />]
   ])
 
   return <div className="link-list">
