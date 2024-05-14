@@ -1,0 +1,8 @@
+.slot-machine {
+  display: flex;
+  flex-direction: row;
+}
+
+.slot-box {
+  font-size: 3rem;
+}

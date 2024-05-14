@@ -1,0 +1,38 @@
+.emote-grid {
+  position: absolute;
+  padding: 10px;
+  border-radius: 0 .5rem .5rem .5rem;
+  width: 400px;
+  height: 200px;
+  overflow-y: scroll;
+  background-color: rgba(128, 128, 128, .5);
+  backdrop-filter: blur(10px);
+}
+
+.emote-grid::-webkit-scrollbar {
+  width: .5rem;
+  border-radius: 0 1rem 1rem 0;
+  background-color: rgba(128, 128, 128, .5);
+  backdrop-filter: blur(10px);
+}
+
+
+.emote-grid::-webkit-scrollbar-thumb {
+  border-radius: 0 1rem 1rem 0;
+  height: 5rem;
+  background-color: #aaa;
+}
+
+.emote-grid::-webkit-scrollbar-thumb:hover {
+  border-radius: 0 1rem 1rem 0;
+  background-color: #ccc;
+}
+
+
+.emote-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  padding: 0;
+  gap: .2rem;
+  text-shadow: 2px 2px 2px rgba(128, 128, 128, .8);
+}

@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import Legal from "../Legal"
 import LinkList from "../LinkList"
+import Randomizer from "../randomizer/Randomizer"
 
 
 const Router = () => {
@@ -10,6 +11,7 @@ const Router = () => {
     <Routes>
       <Route path="/" Component={LinkList} />
       <Route path="/legal" Component={Legal} />
+      <Route path="/random" Component={Randomizer} />
       <Route path="*" Component={() => <p>404</p>} />
     </Routes>
 

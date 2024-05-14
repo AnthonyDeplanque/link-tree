@@ -1,0 +1,23 @@
+.randomizer {
+  padding: 1rem;
+  display: flex;
+}
+
+.add-game {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.add-game .button {
+  background-color: red;
+}
+
+.name-selector {
+  width: 100%;
+}
+
+.emote-selector button {
+  border-radius: .5rem;
+  background-color: rgba(128, 128, 128, .8);
+}
