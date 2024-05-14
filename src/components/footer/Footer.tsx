@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import NotebookIcon from "../icons/NotebookIcon";
-import Randomizer from "../randomizer/Randomizer";
 import DiceIcon from "../icons/DiceIcon";
 
 const Footer = () => {

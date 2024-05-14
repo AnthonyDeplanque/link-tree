@@ -7,7 +7,7 @@ interface EmoteGridProps {
   onClose: () => void;
 }
 
-const EmoteGrid: React.FC<EmoteGridProps> = ({ onSelect, onClose }) => {
+const EmoteGrid: React.FC<EmoteGridProps> = ({ onSelect }) => {
   return (
     <div className="emote-grid" >
       <div className="emote-list">
