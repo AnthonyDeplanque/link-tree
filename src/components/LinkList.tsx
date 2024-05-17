@@ -36,8 +36,7 @@ const LinkList = () => {
     ["youtube", <YoutubeIcon />],
     ["dons", <DonationIcon />],
     ["merch", <MerchIcon />],
-    ['discord', <DiscordIcon />],
-    ['instant gaming', <GamepadIcon />]
+    ['discord', <DiscordIcon />]
   ])
 
   return <div className="link-list">
