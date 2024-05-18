@@ -21,3 +21,16 @@
   border-radius: .5rem;
   background-color: rgba(128, 128, 128, .8);
 }
+
+.randomization-machine {
+  position: fixed;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: rgba(100, 100, 100, .2);
+  backdrop-filter: blur(10px);
+}

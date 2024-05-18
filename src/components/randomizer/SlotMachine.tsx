@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { SelectedGame } from "./Randomizer";
 import '../../assets/slot-machine.css'
 
-const SlotMachine = (props: { slots: SelectedGame[] }) => {
+const SlotMachine = (props: { slots: SelectedGame[], onClose: () => void }) => {
 
-  const { slots } = props;
+  const { slots, onClose } = props;
 
   const [firstSlot, setFirstSlot] = useState<SelectedGame>(slots[0]);
   const [secondSlot, setSecondSlot] = useState<SelectedGame>(slots[1]);
@@ -51,6 +51,7 @@ const SlotMachine = (props: { slots: SelectedGame[] }) => {
     </div>
     <button onClick={handleRandomizeClick}>Randomize</button>
     {isRolling ? <p>Rolling ...</p> : isAllSame() && <p>{thirdSlot.name}</p>}
+    <button onClick={onClose}>Close</button>
   </div>
 }
 
