@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import RandomGameList from "./RandomGameList";
 import "../../assets/randomizer.css"
 import GameForm from "./GameForm";
@@ -39,7 +39,8 @@ const Randomizer: React.FC = () => {
         </div>
         {isSlotMachineDisplayed && <SlotMachine slots={selectedGames} onClose={() => setIsSlotMachineDisplayed(false)} />}
       </div>
-      {selectedGames.length > 1 && <button onClick={() => setIsSlotMachineDisplayed(true)}>Open Slot Machine</button>}
+      {selectedGames.length > 1 && <div className="button-selector-div">
+        <button className="game-selector-button" onClick={() => setIsSlotMachineDisplayed(true)}>Open Slot Machine</button></div>}
       <Link to="/">
         <BackIcon />
       </Link>

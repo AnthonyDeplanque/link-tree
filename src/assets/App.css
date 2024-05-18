@@ -188,3 +188,9 @@ body {
     width: auto;
   }
 }
+
+.card-box {
+  border-radius: 1rem;
+  background-color: rgba(100, 100, 100, .2);
+  backdrop-filter: blur(10px);
+}

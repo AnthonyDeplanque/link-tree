@@ -1,5 +1,6 @@
 import { SelectedGame } from "./Randomizer"
 import '../../assets/random-game-list.css'
+import CancelIcon from "../icons/CancelIcon"
 
 export interface RandomGameListProps {
   games: SelectedGame[],
@@ -11,22 +12,24 @@ export interface RandomGameListProps {
 const RandomGameList = (props: RandomGameListProps) => {
   const { games, onDelete } = props
 
-  return <div className="game-list">
+  return <div className="game-list card-box">
     {games && games?.map(game => {
       const { id, name, emote } = game;
-      return <div key={id} className="game-item">
-        <div className="game-name">
+      return <div key={id} className="game-item card-box">
+        <div className="game-name ">
           <p>{emote}</p>
           <p>{name}</p>
         </div>
-        <p className='game-item-delete' onClick={() => onDelete(id)}>❌</p>
+        <p onClick={() => onDelete(id)}><CancelIcon /></p>
       </div>
     })}
-    <button onClick={
-      () => {
-        games.forEach((game) => onDelete(game.id))
-      }
-    }> Clear game list</button>
+    <div className="button-selector-div">
+      <button className="game-selector-button" onClick={
+        () => {
+          games.forEach((game) => onDelete(game.id))
+        }
+      }> Clear game list</button>
+    </div>
   </div>
 }
 
