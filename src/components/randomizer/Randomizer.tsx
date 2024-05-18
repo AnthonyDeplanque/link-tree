@@ -37,10 +37,10 @@ const Randomizer: React.FC = () => {
           <GameForm onAddGame={handleAddGame} />
           {selectedGames.length > 0 && <RandomGameList games={selectedGames} onDelete={handleDelete} />}
         </div>
-        {isSlotMachineDisplayed && <SlotMachine slots={selectedGames} onClose={() => setIsSlotMachineDisplayed(false)} />}
       </div>
       {selectedGames.length > 1 && <div className="button-selector-div">
         <button className="game-selector-button" onClick={() => setIsSlotMachineDisplayed(true)}>Open Slot Machine</button></div>}
+      {isSlotMachineDisplayed && <SlotMachine slots={selectedGames} onClose={() => setIsSlotMachineDisplayed(false)} />}
       <Link to="/">
         <BackIcon />
       </Link>
