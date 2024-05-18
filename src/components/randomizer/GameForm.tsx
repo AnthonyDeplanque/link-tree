@@ -1,17 +1,22 @@
-import React, { FormEvent, useState } from "react";
-import EmoteGrid from "./EmoteGrid";
+import React, { FormEvent } from "react";
 import { SelectedGame } from "./Randomizer";
 import "../../assets/randomizer.css";
 import { uuid } from "../../Helpers/UUID";
+import CancelIcon from "../icons/CancelIcon";
 
 interface GameFormProps {
+  onEmoteGridOpen: () => void;
+  showEmoteGrid: boolean;
+  gameEmote: string;
+  gameName: string;
   onAddGame: (game: SelectedGame) => void;
+  setGameEmote: (value: string) => void;
+  setGameName: (value: string) => void;
 }
 
-const GameForm: React.FC<GameFormProps> = ({ onAddGame }) => {
-  const [gameEmote, setGameEmote] = useState<string>("");
-  const [gameName, setGameName] = useState<string>("");
-  const [showEmoteGrid, setShowEmoteGrid] = useState<boolean>(false);
+const GameForm: React.FC<GameFormProps> = (props) => {
+
+  const { showEmoteGrid, gameEmote, gameName, onEmoteGridOpen, onAddGame, setGameEmote, setGameName, } = props;
 
   const handleSubmit = (e: FormEvent<HTMLFormElement> | React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
@@ -27,23 +32,23 @@ const GameForm: React.FC<GameFormProps> = ({ onAddGame }) => {
     setGameName("");
   };
 
-  const handleSelectEmote = (emote: string) => {
-    setGameEmote(emote);
-    setShowEmoteGrid(false);
-  };
+
 
   return (
     <>
-      {showEmoteGrid && <EmoteGrid onSelect={handleSelectEmote} onClose={() => setShowEmoteGrid(false)} />}
       <form className="add-game card-box" onSubmit={(e) => handleSubmit(e)}>
+        <div className="button-selector-div">
+          <div className="slot-box">{gameEmote ? gameEmote : <CancelIcon />}</div>
+        </div>
+
         <div className="selected-emote">
           <div className="button-selector-div">
-            <button className="game-selector-button" type="button" onClick={() => setShowEmoteGrid(!showEmoteGrid)}>
+            <button className="game-selector-button" type="button" onClick={onEmoteGridOpen}>
               {showEmoteGrid ? "Close Emote panel" : "Select Emote"}
             </button>
           </div>
-          {gameEmote && <div className="slot-box">{gameEmote}</div>}
         </div>
+
         <div className="name-selector">
           <label>Game name</label>
           <input className="card-box" value={gameName} onChange={(e) => setGameName(e.target.value)} />
@@ -52,6 +57,7 @@ const GameForm: React.FC<GameFormProps> = ({ onAddGame }) => {
           <button className="game-selector-button" type="submit">add</button>
         </ div>
       </form>
+
     </>
   );
 };

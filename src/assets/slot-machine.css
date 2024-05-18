@@ -5,6 +5,7 @@
 
 .slot-box {
   font-size: 3rem;
+  min-height: 4rem;
 }
 
 .slot-machine-result {
