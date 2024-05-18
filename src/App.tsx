@@ -8,8 +8,6 @@ function App() {
 
   // const { isDarkTheme } = useTheme()
 
-  console.log("Eh mais t'es pas sensé regarder la console !")
-  console.log("Allez, zou ! Dehors !!!")
   return (
     <>
       <div className="main">
