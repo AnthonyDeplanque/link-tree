@@ -10,18 +10,20 @@ interface EmoteGridProps {
 
 const EmoteGrid: React.FC<EmoteGridProps> = ({ onSelect, onClose }) => {
   return (
-    <div className="emote-grid card-box" >
+    <div className="dialog-display-background">
+      <div className="emote-grid card-box" >
 
-      <div className="dialog-header"><p className="item-delete" onClick={onClose}><CancelIcon /></p></div>
+        <div className="dialog-header"><p className="item-delete" onClick={onClose}><CancelIcon /></p></div>
 
-      <div className="emote-list">
-        {emotes.map((emote) => (
-          <div key={emote} style={{ cursor: 'pointer' }} onClick={() => onSelect(emote)}>
-            {emote}
-          </div>
-        ))}
+        <div className="emote-list">
+          {emotes.map((emote) => (
+            <div key={emote} style={{ cursor: 'pointer' }} onClick={() => onSelect(emote)}>
+              {emote}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </div >
   );
 };
 

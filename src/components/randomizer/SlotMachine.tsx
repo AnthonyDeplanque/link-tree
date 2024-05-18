@@ -38,26 +38,28 @@ const SlotMachine = (props: { slots: SelectedGame[], onClose: () => void }) => {
     }, 750); // Change this value to adjust the duration of rolling
   };
 
-  return <div className="randomization-machine card-box">
-    <div className="dialog-header"> <p className="item-delete" onClick={onClose}><CancelIcon /></p></div>
-    <div className="randomization-machine-content">
-      <p className="slot-machine-result">{isRolling ? "Rolling ..." : isAllSame() && thirdSlot.name}</p>
-      <div className="slot-machine">
-        <div className="slot-box">
-          <p>{firstSlot.emote}</p>
-        </div>
-        <div className="slot-box">
-          <p>{secondSlot.emote}</p>
-        </div>
-        <div className="slot-box">
-          <p>{thirdSlot.emote}</p>
-        </div>
 
+  return <div className="dialog-display-background">
+    <div className="randomization-machine card-box">
+      <div className="dialog-header"> <p className="item-delete" onClick={onClose}><CancelIcon /></p></div>
+      <div className="randomization-machine-content">
+        <p className="slot-machine-result">{isRolling ? "Rolling ..." : isAllSame() && thirdSlot.name}</p>
+        <div className="slot-machine">
+          <div className="slot-box">
+            <p>{firstSlot.emote}</p>
+          </div>
+          <div className="slot-box">
+            <p>{secondSlot.emote}</p>
+          </div>
+          <div className="slot-box">
+            <p>{thirdSlot.emote}</p>
+          </div>
+
+        </div>
+        <div className="button-selector-div">
+          <button className="game-selector-button" onClick={handleRandomizeClick}>Randomize</button></div>
       </div>
-      <div className="button-selector-div">
-        <button className="game-selector-button" onClick={handleRandomizeClick}>Randomize</button></div>
     </div>
-
   </div>
 }
 

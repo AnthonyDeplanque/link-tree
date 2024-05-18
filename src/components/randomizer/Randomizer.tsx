@@ -68,6 +68,7 @@ const Randomizer: React.FC = () => {
             setGameEmote={setGameEmote} />
           {selectedGames.length > 0 && <RandomGameList games={selectedGames} onDelete={handleDelete} />}
         </div>
+
         {isEmoteGridShown && <EmoteGrid onSelect={handleSelectEmote} onClose={() => setIsEmoteGridShown(false)} />}
         {isSlotMachineDisplayed && <SlotMachine slots={selectedGames} onClose={() => setIsSlotMachineDisplayed(false)} />}
       </div>
