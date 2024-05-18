@@ -1,27 +1,29 @@
 import { useEffect, useState } from "react";
 import { LinkModel } from "../config/link-model";
 import LinkCard from "./card/LinkCard";
-import DiscordIcon from "./icons/DiscordIcon";
-import DonationIcon from "./icons/DonationIcon";
-import GamepadIcon from "./icons/GamepadIcon";
-import InstagramIcon from "./icons/InstagramIcon";
-import ThreadsIcon from "./icons/ThreadsIcon";
-import TiktokIcon from "./icons/TiktokIcon";
-import TwitchIcon from "./icons/TwitchIcon";
-import TwitterIcon from "./icons/TwitterIcon";
-import YoutubeIcon from "./icons/YoutubeIcon";
-import SpotifyIcon from "./icons/SpotifyIcon";
-import MerchIcon from "./icons/MerchIcon";
+import {
+  DiscordIcon,
+  DonationIcon,
+  GamepadIcon,
+  InstagramIcon,
+  MerchIcon,
+  SpotifyIcon,
+  ThreadsIcon,
+  TiktokIcon,
+  TwitchIcon,
+  TwitterIcon,
+  YoutubeIcon
+} from "./icons/";
+
+import { fetchData } from "../Helpers/fetch-data";
+
+
 
 const LinkList = () => {
-
   const [links, setLinks] = useState<LinkModel[]>()
 
   useEffect(() => {
-    fetch("./config/data.json")
-      .then((result: Response) => result.json())
-      .then((data) => setLinks(data))
-      .catch((error) => console.log(error))
+    fetchData<LinkModel[]>("./config/data.json").then((data: LinkModel[]) => setLinks(data))
   }, [])
 
   const socialIcons = new Map<string, JSX.Element>([
