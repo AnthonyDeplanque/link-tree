@@ -6,3 +6,11 @@
 .slot-box {
   font-size: 3rem;
 }
+
+.slot-machine-result {
+  min-height: 1.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
