@@ -29,18 +29,14 @@
   /* Transition sur l'opacité */
 }
 
-.light .link-card::after {
-  background-image: linear-gradient(90deg, rgba(99, 154, 96, 1) 0%, rgba(47, 121, 9, 1) 31%, rgba(18, 56, 6, 1) 100%);
-}
-
-.dark .link-card::after {
+.link-card::after {
   background-image: linear-gradient(90deg, rgba(18, 56, 6, 1) 0%, rgba(47, 121, 9, 1) 31%, rgba(99, 154, 96, 1) 100%);
 }
 
 .link-card:hover::after {
   opacity: 1;
-  /* Fait apparaître progressivement le dégradé au survol */
 }
+
 
 
 .link-card-icon {
@@ -59,12 +55,8 @@
 
 }
 
-.light .link-card:hover .link-card-icon {
 
-  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
-}
-
-.dark .link-card:hover .link-card-icon {
+.link-card:hover .link-card-icon {
   filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
 
 }
