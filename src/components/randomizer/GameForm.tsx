@@ -33,24 +33,26 @@ const GameForm: React.FC<GameFormProps> = ({ onAddGame }) => {
   };
 
   return (
-    <form className="add-game card-box" onSubmit={(e) => handleSubmit(e)}>
-      <div className="selected-emote">
-        <div className="button-selector-div">
-          <button className="game-selector-button" type="button" onClick={() => setShowEmoteGrid(!showEmoteGrid)}>
-            {showEmoteGrid ? "Close Emote panel" : "Select Emote"}
-          </button>
+    <>
+      {showEmoteGrid && <EmoteGrid onSelect={handleSelectEmote} onClose={() => setShowEmoteGrid(false)} />}
+      <form className="add-game card-box" onSubmit={(e) => handleSubmit(e)}>
+        <div className="selected-emote">
+          <div className="button-selector-div">
+            <button className="game-selector-button" type="button" onClick={() => setShowEmoteGrid(!showEmoteGrid)}>
+              {showEmoteGrid ? "Close Emote panel" : "Select Emote"}
+            </button>
+          </div>
+          {gameEmote && <div className="slot-box">{gameEmote}</div>}
         </div>
-        {showEmoteGrid && <EmoteGrid onSelect={handleSelectEmote} onClose={() => setShowEmoteGrid(false)} />}
-        {gameEmote && <div className="slot-box">{gameEmote}</div>}
-      </div>
-      <div className="name-selector">
-        <label>Game name</label>
-        <input className="card-box" value={gameName} onChange={(e) => setGameName(e.target.value)} />
-      </div>
-      <div className="button-selector-div">
-        <button className="game-selector-button" type="submit">add</button>
-      </ div>
-    </form>
+        <div className="name-selector">
+          <label>Game name</label>
+          <input className="card-box" value={gameName} onChange={(e) => setGameName(e.target.value)} />
+        </div>
+        <div className="button-selector-div">
+          <button className="game-selector-button" type="submit">add</button>
+        </ div>
+      </form>
+    </>
   );
 };
 
