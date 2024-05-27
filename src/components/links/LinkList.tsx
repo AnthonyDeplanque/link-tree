@@ -1,46 +1,51 @@
-import { useEffect, useState } from "react";
-import { LinkModel } from "../../config/link-model";
-import LinkCard from "./LinkCard";
-import DiscordIcon from "../icons/DiscordIcon";
-import DonationIcon from "../icons/DonationIcon";
-import GamepadIcon from "../icons/GamepadIcon";
-import InstagramIcon from "../icons/InstagramIcon";
-import ThreadsIcon from "../icons/ThreadsIcon";
-import TiktokIcon from "../icons/TiktokIcon";
-import TwitchIcon from "../icons/TwitchIcon";
-import TwitterIcon from "../icons/TwitterIcon";
-import YoutubeIcon from "../icons/YoutubeIcon";
+import { useEffect, useState } from 'react';
+import { fetchData } from '../../Helpers/fetch-data';
+import { LinkModel } from '../../config/link-model';
+import {
+  DiscordIcon,
+  DonationIcon,
+  GamepadIcon,
+  InstagramIcon,
+  MerchIcon,
+  SpotifyIcon,
+  ThreadsIcon,
+  TiktokIcon,
+  TwitchIcon,
+  TwitterIcon,
+  YoutubeIcon,
+} from '../icons';
+import LinkCard from './LinkCard';
 
 const LinkList = () => {
-
-  const [links, setLinks] = useState<LinkModel[]>()
+  const [links, setLinks] = useState<LinkModel[]>();
 
   useEffect(() => {
-    fetch("./config/data.json")
-      .then((result: Response) => result.json())
-      .then((data) => setLinks(data))
-      .catch((error) => console.log(error))
-  }, [])
+    fetchData<LinkModel[]>('./config/data.json').then((data: LinkModel[]) => setLinks(data));
+  }, []);
 
   const socialIcons = new Map<string, JSX.Element>([
-    ["instagram", <InstagramIcon />],
-    ["threads", <ThreadsIcon />],
-    ["tiktok", <TiktokIcon />],
-    ["twitch", <TwitchIcon />],
-    ["twitter", <TwitterIcon />],
-    ["youtube", <YoutubeIcon />],
-    ["dons", <DonationIcon />],
+    ['instant gaming', <GamepadIcon />],
+    ['instagram', <InstagramIcon />],
     ['discord', <DiscordIcon />],
-    ['instant gaming', <GamepadIcon />]
-  ])
+    ['threads', <ThreadsIcon />],
+    ['tiktok', <TiktokIcon />],
+    ['spotify', <SpotifyIcon />],
+    ['twitch', <TwitchIcon />],
+    ['twitter', <TwitterIcon />],
+    ['youtube', <YoutubeIcon />],
+    ['dons', <DonationIcon />],
+    ['merch', <MerchIcon />],
+    ['discord', <DiscordIcon />],
+  ]);
 
-  return <div className="link-list">
-    {
-      links && links.map((link: LinkModel, key: number) =>
-        <LinkCard key={key} link={link} icon={socialIcons.get(link.name)} />)
-
-    }
-  </div>
-}
+  return (
+    <div className='link-list'>
+      {links &&
+        links.map((link: LinkModel, key: number) => (
+          <LinkCard key={key} link={link} icon={socialIcons.get(link.name)} />
+        ))}
+    </div>
+  );
+};
 
 export default LinkList;

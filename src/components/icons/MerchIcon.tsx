@@ -1,4 +1,4 @@
-const BackIcon = () => (
+const MerchIcon = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='24'
@@ -9,10 +9,12 @@ const BackIcon = () => (
     strokeWidth='2'
     strokeLinecap='round'
     strokeLinejoin='round'
+    className='lucide lucide-shopping-bag'
   >
-    <path d='M9 14 4 9l5-5' />
-    <path d='M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11' />
+    <path d='M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z' />
+    <path d='M3 6h18' />
+    <path d='M16 10a4 4 0 0 1-8 0' />
   </svg>
 );
 
-export default BackIcon;
+export default MerchIcon;

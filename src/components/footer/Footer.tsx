@@ -1,22 +1,25 @@
-import { Link } from "react-router-dom";
-import NotebookIcon from "../icons/NotebookIcon";
+import { Link } from 'react-router-dom';
+import DiceIcon from '../icons/DiceIcon';
+import NotebookIcon from '../icons/NotebookIcon';
 
 const Footer = () => {
-  return <div className="footer-component">
-    <div className="left">
-      <Link to="/login">
-        <p>Login</p>
-      </Link>
+  return (
+    <div className='footer-component'>
+      <div className='left'>
+        <Link to='/random'>
+          <DiceIcon />
+        </Link>
+      </div>
+      <div className='middle'>
+        <p>Made with love and a lot of coffee</p>
+      </div>
+      <div className='right'>
+        <Link to='/legal'>
+          <NotebookIcon />
+        </Link>
+      </div>
     </div>
-    <div className="middle">
-      <p>Made with love and a lot of coffee</p>
-    </div>
-    <div className="right">
-      <Link to="/legal">
-        <NotebookIcon />
-      </Link>
-    </div>
-  </div>
-}
+  );
+};
 
-export default Footer
+export default Footer;
