@@ -9,9 +9,6 @@ const Footer = () => {
         <Link to='/random'>
           <DiceIcon />
         </Link>
-        <Link to='/login'>
-          <p>Login</p>
-        </Link>
       </div>
       <div className='middle'>
         <p>Made with love and a lot of coffee</p>
