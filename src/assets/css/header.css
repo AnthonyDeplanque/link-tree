@@ -1,0 +1,17 @@
+.profile-picture-component {
+  margin: 1rem;
+  width: 75%;
+}
+
+.profile-picture-component>h1 {
+  padding-left: 2rem;
+}
+
+.profile-picture {
+  width: 75px;
+}
+
+.header-name {
+  padding-left: 2rem;
+  height: 6rem;
+}

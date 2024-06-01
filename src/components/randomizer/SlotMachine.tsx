@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { SelectedGame } from "./Randomizer";
-import '../../assets/slot-machine.css'
+import '../../assets/css/slot-machine.css'
 import CancelIcon from "../icons/CancelIcon";
 
 const SlotMachine = (props: { slots: SelectedGame[], onClose: () => void }) => {

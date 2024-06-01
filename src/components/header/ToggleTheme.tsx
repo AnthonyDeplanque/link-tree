@@ -1,6 +1,6 @@
 
 
-import '../../assets/toggle-theme.css'
+import '../../assets/css/toggle-theme.css'
 import { useTheme } from '../../context/theme/useTheme'
 import Toggle from '../generics/Toggle';
 

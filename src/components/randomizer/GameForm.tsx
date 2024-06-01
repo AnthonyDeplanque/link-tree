@@ -1,6 +1,6 @@
 import React, { FormEvent } from "react";
 import { SelectedGame } from "./Randomizer";
-import "../../assets/randomizer.css";
+import "../../assets/css/randomizer.css";
 import { uuid } from "../../Helpers/UUID";
 import CancelIcon from "../icons/CancelIcon";
 

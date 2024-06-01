@@ -1,10 +1,10 @@
-import ProfilePicture from "./ProfilePicture";
+import HeaderTitle from "./HeaderTitle";
 // import ToggleTheme from "./ToggleTheme";
 
 const Header = () => {
 
   return <div className="header-component">
-    <ProfilePicture />
+    <HeaderTitle />
     {/* <ToggleTheme /> */}
   </div>
 }
