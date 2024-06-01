@@ -1,17 +1,12 @@
-import React from 'react';
-import Router from './router/Router';
-
-
-
+import React from 'react'
+import Router from './router/Router'
 
 const MainComponent: React.FC = () => {
   return (
-    <div className="main-container" >
+    <div className='main-container'>
       <Router />
-    </div >
-  );
+    </div>
+  )
+}
 
-
-};
-
-export default MainComponent;
+export default MainComponent

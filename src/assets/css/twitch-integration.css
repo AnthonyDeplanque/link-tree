@@ -3,6 +3,23 @@
     height: 26rem;
     width: 45rem;
   }
+
+  .clip-container {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .clip-title {
+    font-size: 2rem;
+  }
+
+  .twitch-iframe-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -10,6 +27,19 @@
     height: 13rem;
     width: 22.5rem;
   }
+
+  .clip-container {
+    align-items: center;
+  }
+
+  .clip-title {
+    font-size: 1.5rem;
+  }
+}
+
+.clip-informations-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .clip-container {
@@ -18,19 +48,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .clip-title {
   font-weight: bold;
-  font-size: 2rem;
 }
 
 .clip-label {
   font-weight: bold;
   padding-left: 1rem;
-  padding-bottom: .3rem;
-  padding-right: .2rem;
+  padding-bottom: 0.3rem;
+  padding-right: 0.2rem;
 }
 
 .clip-information {

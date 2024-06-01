@@ -1,9 +1,11 @@
-import TwitchIntegration from "./twitch-integration/TwitchIntegration"
+import TwitchIntegration from './twitch-integration/TwitchIntegration'
 
 const Home = () => {
-  return <>
-    <p>hello</p>
-    <TwitchIntegration />
-  </>
+  return (
+    <>
+      <p>hello</p>
+      <TwitchIntegration />
+    </>
+  )
 }
 export default Home

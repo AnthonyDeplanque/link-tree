@@ -1,9 +1,7 @@
 .game-list {
   margin: 2rem;
   padding: 1rem;
-
 }
-
 
 .game-name {
   display: flex;
@@ -17,9 +15,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: .5rem;
-  padding: .5rem 1rem;
-
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .item-delete {

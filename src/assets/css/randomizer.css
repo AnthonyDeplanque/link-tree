@@ -27,9 +27,9 @@
 }
 
 .name-selector input {
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: transparent;
-  color: #DDD;
+  color: #ddd;
   border: 0;
 }
 
@@ -38,7 +38,6 @@
   border: 0;
 }
 
-
 .randomization-machine {
   position: fixed;
   display: flex;
@@ -46,7 +45,6 @@
   align-content: center;
   align-items: center;
   justify-content: center;
-
 }
 
 .randomization-machine-content {
@@ -54,8 +52,8 @@
 }
 
 .button-selector-div {
-  padding: .5rem;
-  padding: .5rem;
+  padding: 0.5rem;
+  padding: 0.5rem;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -64,15 +62,15 @@
 
 .game-selector-button {
   border-radius: 1rem;
-  background-color: rgba(128, 128, 128, .8);
+  background-color: rgba(128, 128, 128, 0.8);
   border: 0;
-  padding: .5rem;
-  transition: .2s ease-in-out;
+  padding: 0.5rem;
+  transition: 0.2s ease-in-out;
   min-width: 8rem;
 }
 
 .game-selector-button:hover {
-  background-color: rgba(200, 200, 200, .8);
+  background-color: rgba(200, 200, 200, 0.8);
 }
 
 .selected-emote {
@@ -84,14 +82,13 @@
 }
 
 .dialog-header {
-  padding: .5rem;
-  padding: .5rem;
+  padding: 0.5rem;
+  padding: 0.5rem;
   display: flex;
   width: 90%;
   align-content: center;
   justify-content: flex-end;
-  border-bottom: 1px solid #DDD;
-  margin-bottom: .5rem;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0.5rem;
   align-items: center;
-
 }
