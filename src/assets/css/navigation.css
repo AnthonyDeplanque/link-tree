@@ -1,0 +1,16 @@
+.navigation-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-items a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.navigation-items a svg {
+  padding-right: 2rem;
+}
