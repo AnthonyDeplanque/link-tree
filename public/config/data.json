@@ -1,43 +1,42 @@
-
-  [
-    {
-      "name":"twitch",
-      "address":"https://www.twitch.tv/seteemio/" 
-    },
-    {
-      "name":"spotify",
-      "address": "https://open.spotify.com/user/11149190948?si=2d08b87dec5740d6"
-    },
-    {
-      "name":"threads",
-      "address":"https://www.threads.net/@seteemio" 
-    },
-    {
-      "name":"instagram",
-      "address":"https://www.instagram.com/seteemio/" 
-    },
-    {
-      "name":"merch",
-      "address":"https://boutique-de-seth-black.creator-spring.com/"
-    },
-    {
-      "name":"youtube",
-      "address":"https://www.youtube.com/@SethBlack999" 
-    },
-    {
-      "name":"tiktok",
-      "address":"https://www.tiktok.com/@seteemio" 
-    },
-    {
-      "name":"twitter",
-      "address":"https://www.twitter.com/Seteemio/" 
-    },
-    {
-      "name":"discord",
-      "address":"https://discord.com/invite/cH9FERDXSQ"
-    },
-    {
-      "name":"dons",
-      "address":"https://streamlabs.com/seteemio/tip"
-    }
-  ]
+[
+  {
+    "name": "twitch",
+    "address": "https://www.twitch.tv/seteemio/"
+  },
+  {
+    "name": "spotify",
+    "address": "https://open.spotify.com/user/11149190948?si=2d08b87dec5740d6"
+  },
+  {
+    "name": "threads",
+    "address": "https://www.threads.net/@seteemio"
+  },
+  {
+    "name": "instagram",
+    "address": "https://www.instagram.com/seteemio/"
+  },
+  {
+    "name": "merch",
+    "address": "https://boutique-de-seth-black.creator-spring.com/"
+  },
+  {
+    "name": "youtube",
+    "address": "https://www.youtube.com/@SethBlack999"
+  },
+  {
+    "name": "tiktok",
+    "address": "https://www.tiktok.com/@seteemio"
+  },
+  {
+    "name": "twitter",
+    "address": "https://www.twitter.com/Seteemio/"
+  },
+  {
+    "name": "discord",
+    "address": "https://discord.com/invite/cH9FERDXSQ"
+  },
+  {
+    "name": "dons",
+    "address": "https://streamlabs.com/seteemio/tip"
+  }
+]

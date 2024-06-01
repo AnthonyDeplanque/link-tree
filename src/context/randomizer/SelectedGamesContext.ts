@@ -1,10 +1,9 @@
-import { createContext } from "react";
-import { SelectedGame } from "../../components/randomizer/Randomizer";
-
+import { createContext } from 'react'
+import { SelectedGame } from '../../components/randomizer/Randomizer'
 
 export interface SelectedGamesContextType {
-  selectedGames: SelectedGame[];
-  addOrRemoveGames: (game: SelectedGame) => void;
+  selectedGames: SelectedGame[]
+  addOrRemoveGames: (game: SelectedGame) => void
 }
 
-export const SelectedGamesContext = createContext<SelectedGamesContextType | undefined>(undefined);
+export const SelectedGamesContext = createContext<SelectedGamesContextType | undefined>(undefined)

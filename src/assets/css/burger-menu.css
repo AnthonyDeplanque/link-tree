@@ -14,25 +14,25 @@
 .burger div {
   width: 100%;
   height: 0.3rem;
-  background-color: #AFF600;
+  background-color: #aff600;
   border-radius: 25px;
   transition: all 0.3s;
 }
 
 .burger.open .line1 {
-  transform: translate(1.3rem) rotate(45deg) translate(-.55rem, 1rem) scaleX(50%);
-  background-color: #DDD;
+  transform: translate(1.3rem) rotate(45deg) translate(-0.55rem, 1rem) scaleX(50%);
+  background-color: #ddd;
 }
 
 .burger.open .line2 {
   /* opacity: 0; */
-  transform: translate(-.6rem, 0rem);
-  background-color: #DDD;
+  transform: translate(-0.6rem, 0rem);
+  background-color: #ddd;
 }
 
 .burger.open .line3 {
-  transform: translate(1.3rem) rotate(-45deg) translate(-.55rem, -1rem) scaleX(50%);
-  background-color: #DDD;
+  transform: translate(1.3rem) rotate(-45deg) translate(-0.55rem, -1rem) scaleX(50%);
+  background-color: #ddd;
 }
 
 .nav-menu {
@@ -43,7 +43,7 @@
   border-radius: 0 1rem 1rem 0;
   border: solid;
   border-left: none;
-  background-color: rgba(100, 100, 100, .2);
+  background-color: rgba(100, 100, 100, 0.2);
   backdrop-filter: blur(10px);
   padding: 2rem;
   transform: translateX(-100%);

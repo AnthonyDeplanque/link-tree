@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
-import BackIcon from "./icons/BackIcon";
+import { Link } from 'react-router-dom'
+import BackIcon from './icons/BackIcon'
 
 const Legal = () => {
   return (
     <>
-      <div style={{ padding: "1rem" }}>
+      <div style={{ padding: '1rem' }}>
         <p>Coming soon !</p>
       </div>
-      <div style={{ padding: "1rem" }}>
-        <Link to="/">
+      <div style={{ padding: '1rem' }}>
+        <Link to='/'>
           <BackIcon />
         </Link>
       </div>
@@ -16,4 +16,4 @@ const Legal = () => {
   )
 }
 
-export default Legal;
+export default Legal

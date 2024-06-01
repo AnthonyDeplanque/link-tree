@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { LinkModel } from "../config/link-model";
-import LinkCard from "./card/LinkCard";
+import { useEffect, useState } from 'react'
+import { LinkModel } from '../config/link-model'
+import LinkCard from './card/LinkCard'
 import {
   DiscordIcon,
   DonationIcon,
@@ -12,41 +12,41 @@ import {
   TiktokIcon,
   TwitchIcon,
   TwitterIcon,
-  YoutubeIcon
-} from "./icons/";
+  YoutubeIcon,
+} from './icons/'
 
-import { fetchData } from "../Helpers/fetch-data";
-
-
+import { fetchData } from '../Helpers/fetch-data'
 
 const LinkList = () => {
   const [links, setLinks] = useState<LinkModel[]>()
 
   useEffect(() => {
-    fetchData<LinkModel[]>("./config/data.json").then((data: LinkModel[]) => setLinks(data))
+    fetchData<LinkModel[]>('./config/data.json').then((data: LinkModel[]) => setLinks(data))
   }, [])
 
   const socialIcons = new Map<string, JSX.Element>([
     ['instant gaming', <GamepadIcon />],
-    ["instagram", <InstagramIcon />],
+    ['instagram', <InstagramIcon />],
     ['discord', <DiscordIcon />],
-    ["threads", <ThreadsIcon />],
-    ["tiktok", <TiktokIcon />],
+    ['threads', <ThreadsIcon />],
+    ['tiktok', <TiktokIcon />],
     ['spotify', <SpotifyIcon />],
-    ["twitch", <TwitchIcon />],
-    ["twitter", <TwitterIcon />],
-    ["youtube", <YoutubeIcon />],
-    ["dons", <DonationIcon />],
-    ["merch", <MerchIcon />],
-    ['discord', <DiscordIcon />]
+    ['twitch', <TwitchIcon />],
+    ['twitter', <TwitterIcon />],
+    ['youtube', <YoutubeIcon />],
+    ['dons', <DonationIcon />],
+    ['merch', <MerchIcon />],
+    ['discord', <DiscordIcon />],
   ])
 
-  return <div className="link-list">
-    {
-      links && links.map((link: LinkModel, key: number) =>
-        <LinkCard key={key} link={link} icon={socialIcons.get(link.name)} />)
-    }
-  </div>
+  return (
+    <div className='link-list'>
+      {links &&
+        links.map((link: LinkModel, key: number) => (
+          <LinkCard key={key} link={link} icon={socialIcons.get(link.name)} />
+        ))}
+    </div>
+  )
 }
 
-export default LinkList;
+export default LinkList
