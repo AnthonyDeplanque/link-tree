@@ -10,6 +10,7 @@ const Router = () => {
 
     <Routes>
       <Route path="/" Component={LinkList} />
+      <Route path="/links" Component={LinkList} />
       <Route path="/legal" Component={Legal} />
       <Route path="/random" Component={Randomizer} />
       <Route path="*" Component={() => <p>404</p>} />

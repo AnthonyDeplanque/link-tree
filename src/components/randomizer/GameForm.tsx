@@ -3,6 +3,7 @@ import { SelectedGame } from "./Randomizer";
 import "../../assets/css/randomizer.css";
 import { uuid } from "../../Helpers/UUID";
 import CancelIcon from "../icons/CancelIcon";
+import BlankIcon from "../icons/BlankIcon";
 
 interface GameFormProps {
   onEmoteGridOpen: () => void;
@@ -38,7 +39,7 @@ const GameForm: React.FC<GameFormProps> = (props) => {
     <>
       <form className="add-game card-box" onSubmit={(e) => handleSubmit(e)}>
         <div className="button-selector-div">
-          <div className="slot-box">{gameEmote ? gameEmote : <CancelIcon />}</div>
+          <div className="slot-box">{gameEmote ? gameEmote : <BlankIcon />}</div>
         </div>
 
         <div className="selected-emote">
