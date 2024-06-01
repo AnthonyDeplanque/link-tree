@@ -109,40 +109,17 @@ body {
   align-items: center;
 }
 
-.light {
-  background-color: #dddddd;
-  color: #111111;
-  transition: background-color 0.5s ease;
-}
-
-.light a {
-  color: #111111;
-}
-
-.light .header-component {
-  color: #111111;
-  background-color: #dddddd;
-  z-index: 2;
-  box-shadow: 0 3px 3px #111111;
-}
-
-.light .footer-component {
-  color: #111111;
-  background-color: #dddddd;
-  z-index: 2;
-  box-shadow: 0 -1px 3px #111111;
-}
-
-
-
 .main {
   background-color: #111111;
   color: #dddddd;
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
   transition: background-color 0.5s ease;
 }
 
 .main a {
   color: #dddddd;
+  background-color: rgba(25, 25, 25, .7);
 }
 
 .main .header-component {
