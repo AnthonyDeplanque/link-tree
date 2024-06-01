@@ -1,6 +1,6 @@
 import React from "react";
 import { emotes } from "../../Constants/emotes";
-import '../../assets/emote-grid.css'
+import '../../assets/css/emote-grid.css'
 import CancelIcon from "../icons/CancelIcon";
 
 interface EmoteGridProps {

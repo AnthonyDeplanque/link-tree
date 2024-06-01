@@ -1,5 +1,5 @@
 import { SelectedGame } from "./Randomizer"
-import '../../assets/random-game-list.css'
+import '../../assets/css/random-game-list.css'
 import CancelIcon from "../icons/CancelIcon"
 
 export interface RandomGameListProps {

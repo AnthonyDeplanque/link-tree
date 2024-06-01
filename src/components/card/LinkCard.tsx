@@ -1,5 +1,5 @@
 import { LinkModel } from "../../config/link-model";
-import "../../assets/link-card.css"
+import "../../assets/css/link-card.css"
 export interface LinkCardProps {
   link: LinkModel,
   icon?: JSX.Element

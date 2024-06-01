@@ -1,0 +1,39 @@
+@media screen and (min-width: 740px) {
+  .twitch-iframe-clip {
+    height: 26rem;
+    width: 45rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .twitch-iframe-clip {
+    height: 13rem;
+    width: 22.5rem;
+  }
+}
+
+.clip-container {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clip-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.clip-label {
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: .3rem;
+  padding-right: .2rem;
+}
+
+.clip-information {
+  display: flex;
+  flex-direction: row;
+}

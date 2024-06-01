@@ -9,3 +9,7 @@ export { default as TwitterIcon } from './TwitterIcon';
 export { default as YoutubeIcon } from './YoutubeIcon';
 export { default as SpotifyIcon } from './SpotifyIcon';
 export { default as MerchIcon } from './MerchIcon';
+export { default as BlankIcon } from './BlankIcon';
+export { default as BackIcon } from './BackIcon';
+export { default as HomeIcon } from './HomeIcon';
+export { default as ListIcon } from './ListIcon';

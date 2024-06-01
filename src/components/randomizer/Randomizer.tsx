@@ -1,6 +1,6 @@
 import { useState } from "react";
 import RandomGameList from "./RandomGameList";
-import "../../assets/randomizer.css"
+import "../../assets/css/randomizer.css"
 import GameForm from "./GameForm";
 import SlotMachine from "./SlotMachine";
 import { Link } from "react-router-dom";
