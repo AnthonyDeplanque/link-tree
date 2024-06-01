@@ -2,7 +2,6 @@ import React, { FormEvent } from "react";
 import { SelectedGame } from "./Randomizer";
 import "../../assets/css/randomizer.css";
 import { uuid } from "../../Helpers/UUID";
-import CancelIcon from "../icons/CancelIcon";
 import BlankIcon from "../icons/BlankIcon";
 
 interface GameFormProps {

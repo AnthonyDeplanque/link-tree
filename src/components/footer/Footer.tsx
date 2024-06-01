@@ -1,7 +1,3 @@
-
-import BurgerMenu from "../BurgerMenu";
-import Navigation from "../Navigation";
-
 const Footer = () => {
   return <div className="footer-component">
     <div className="left">

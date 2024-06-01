@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchClips, getAccessToken, getIdByUserName } from "./twitch-integration";
 import ShowClip, { ClipType } from "./ShowClip"; // Importe le composant ShowClip
 import '../../assets/css/twitch-integration.css'
