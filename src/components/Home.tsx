@@ -1,9 +1,10 @@
+import Presentation from './Presentation'
 import TwitchIntegration from './twitch-integration/TwitchIntegration'
 
 const Home = () => {
   return (
     <>
-      <p>hello</p>
+      <Presentation />
       <TwitchIntegration />
     </>
   )

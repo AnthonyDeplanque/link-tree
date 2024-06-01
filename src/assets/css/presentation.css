@@ -1,0 +1,15 @@
+.presentation {
+  padding: 3rem;
+  margin: 1rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.presentation span {
+  font-weight: bold;
+}
+
+.presentation p {
+  text-align: center;
+  padding-top: .8rem;
+}

@@ -43,15 +43,17 @@ const ShowClip: React.FC<ClipProps> = ({ clip }) => {
           <p className='clip-label'>Nombre de vues : </p>
           <p>{clip.view_count}</p>
         </div>
-        <div className='twitch-iframe-container'></div>
+        <div className='twitch-iframe-container'>
 
-        <iframe
-          className='twitch-iframe-clip'
-          title={clip.title}
-          // src="https://player.twitch.tv/?video=v40464143&parent=streamernews.example.com&autoplay=false"
-          src={`https://clips.twitch.tv/embed?clip=${clip.id}&parent=${locationURL ? locationURL : window.location.href}&autoplay=false`}
-          allowFullScreen
-        />
+
+          <iframe
+            className='twitch-iframe-clip'
+            title={clip.title}
+            // src="https://player.twitch.tv/?video=v40464143&parent=streamernews.example.com&autoplay=false"
+            src={`https://clips.twitch.tv/embed?clip=${clip.id}&parent=${locationURL ? locationURL : window.location.href}&autoplay=false`}
+            allowFullScreen
+          />
+        </div>
       </div>
     </div>
   )
