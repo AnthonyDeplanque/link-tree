@@ -55,3 +55,27 @@ export const fetchClips = (broadcasterId: string, token: string): Promise<any> =
       throw new Error(`failed to retrieve clips, ${err}`)
     })
 }
+
+export const getUserInfos = (userName: string, token: string) => {
+  const clientId = CLIENT_ID
+  return axios
+    .get(`https://api.twitch.tv/helix/users?login=${userName}`, {
+      headers: {
+        'Client-ID': clientId,
+        Authorization: `Bearer ${token}`,
+      },
+    })
+    .then((data) => data.data.data[0])
+}
+
+export const getUserInfosById = (userId: string, token: string) => {
+  const clientId = CLIENT_ID
+  return axios
+    .get(`https://api.twitch.tv/helix/users?id=${userId}`, {
+      headers: {
+        'Client-ID': clientId,
+        Authorization: `Bearer ${token}`,
+      },
+    })
+    .then((data) => data.data.data[0])
+}
