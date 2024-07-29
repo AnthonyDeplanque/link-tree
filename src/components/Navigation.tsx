@@ -23,6 +23,9 @@ const Navigation = () => {
         <DiceIcon />
         RANDOMIZER
       </Link>
+      <Link to='/links'>
+        <NotebookIcon /> NOTEBOOK TO TEST ROUTE
+      </Link>
     </div>
   )
 }
