@@ -1,30 +1,26 @@
 import { Link } from 'react-router-dom'
-import { HomeIcon, ListIcon } from './icons'
-import NotebookIcon from './icons/NotebookIcon'
-import DiceIcon from './icons/DiceIcon'
 import '../assets/css/navigation.css'
+import { HomeIcon } from './icons'
+import DiceIcon from './icons/DiceIcon'
 
 const Navigation = () => {
   return (
     <div className='navigation-items'>
       <Link to='/'>
         <HomeIcon />
-        HOME
-      </Link>
-      <Link to='/links'>
-        <ListIcon />
         LINKS
       </Link>
-      <Link to='/legal'>
+      {/* <Link to='/links'>
+        <ListIcon />
+        LINKS
+      </Link> */}
+      {/* <Link to='/legal'>
         <NotebookIcon />
         LEGAL
-      </Link>
+      </Link> */}
       <Link to='/random'>
         <DiceIcon />
         RANDOMIZER
-      </Link>
-      <Link to='/links'>
-        <NotebookIcon /> NOTEBOOK TO TEST ROUTE
       </Link>
     </div>
   )
